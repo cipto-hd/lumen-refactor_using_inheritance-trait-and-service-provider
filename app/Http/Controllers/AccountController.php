@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 
 class AccountController extends Controller
 {
@@ -16,8 +15,5 @@ class AccountController extends Controller
         //
     }
 
-    public function show($id)
-    {
-        return User::findOrFail($id);
-    }
+   
 }
