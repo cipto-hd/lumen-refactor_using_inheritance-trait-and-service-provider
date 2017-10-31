@@ -21,4 +21,8 @@ $router->get('/account/profile/{id}', 'UserController@show');
 
 $router->get('/admin/users/{id}', 'UserController@show');
 
+// create seperate controller
+$router->get('/admin/users/{id}', 'UserController@show');
+
+$router->get('/account/profile/{id}', 'AccountController@show');
 
