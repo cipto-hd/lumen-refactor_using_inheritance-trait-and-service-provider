@@ -14,3 +14,14 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/admin/users/{id}', 'UserConroller@show');
+
+$router->get('/account/profile/{id}', 'UserConroller@show');
+
+
+// create seperate controller
+$router->get('/admin/users/{id}', 'UserConroller@show');
+
+$router->get('/account/profile/{id}', 'AccountConroller@show');
+
